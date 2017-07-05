@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.booklist.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/search_badge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the book name here ...."/>
+        <Button
+            android:layout_below="@+id/search_badge"
+            android:layout_width="wrap_content"
+            android:id="@+id/button1"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Search"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/booklist"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"/>
+        <TextView
+            android:id="@+id/empty_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAppearance="?android:textAppearanceMedium"/>
+        <ProgressBar
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_centerInParent="true"
+            android:indeterminate="false"
+            android:progress="10"
+            android:max="100"
+            />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BookList</string>
+    <string name="book_title">Book Title</string>
+    <string name="error">Problem in parsing the JSON results</string>
+    <string name="author">Author</string>
+    <string name="nic">No Internet Connection</string>
+    <string name="nb">No Books</string>
+
+</resources>
